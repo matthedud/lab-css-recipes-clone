@@ -1,0 +1,59 @@
+/*Some necessary adjustments*/
+h1, body, html, main {
+    margin: 0;
+  }
+  /*Import the font and set the default size*/
+  html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:rgb(90, 90, 90);
+  }
+  
+  h1 {
+    background-image: url("../images/apple-pie.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 4rem;
+    /* padding: auto; */
+  }
+  
+  main{
+    padding:  20px 10%;;
+  }
+  .ingredient-section{
+    border-top: 2px solid rgb(75, 75, 75);
+    border-bottom: 2px solid rgb(75, 75, 75);
+    padding: 20px 0;
+  }
+  
+  .info-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+  .ingredient-list{
+    list-style-type: '- ';
+    padding: 0;
+  }
+  
+  ol {
+    list-style-type:none;
+    padding: 0;
+  }
+  
+  ol li:before {
+    content:counter(section) ") ";
+  }
+  ol li {
+    counter-increment:section;
+    padding-bottom: 5px;
+  }
